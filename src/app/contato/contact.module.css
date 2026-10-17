@@ -1,0 +1,14 @@
+.contact { display:grid; grid-template-columns:1.25fr .75fr; gap:clamp(40px,10vw,145px); align-items:center; min-height:calc(100svh - 260px); padding-top:65px; padding-bottom:85px; }
+.contactMain h1 { margin:27px 0 24px; font:400 clamp(54px,8.2vw,105px)/.89 var(--display); letter-spacing:-.06em; }.contactMain h1 em { color:var(--plum); }
+.contactMain>p { max-width:460px; color:#66585c; font-size:19px; }
+.whatsapp { display:flex; justify-content:space-between; align-items:center; gap:30px; max-width:450px; margin-top:38px; padding:17px 19px; background:var(--plum); color:var(--paper); text-decoration:none; font-size:12px; font-weight:700; letter-spacing:1.2px; transition:background .2s,transform .2s; }.whatsapp:hover { background:var(--plum-dark); transform:translateY(-2px); }.whatsapp b { font-size:20px; }
+.contactMain small { display:block; max-width:400px; margin-top:12px; color:#786b6f; font-size:12px; }
+.contactAside { position:relative; min-height:460px; padding:60px 40px 30px; background:#e9ddd5; display:flex; flex-direction:column; justify-content:flex-end; overflow:hidden; }
+.contactAside .kicker { position:relative; z-index:1; }.contactAside>p { position:relative; z-index:1; margin:13px 0 25px; color:var(--plum); font:400 43px/.96 var(--display); letter-spacing:-.04em; }
+.sunMark { position:absolute; top:30px; right:-58px; width:270px; height:270px; border:1px solid var(--rose); border-radius:50%; }.sunMark::before,.sunMark::after { position:absolute; content:""; border:1px solid var(--rose); border-radius:50%; }.sunMark::before { inset:25px; }.sunMark::after { inset:50px; }.sunMark i { position:absolute; left:50%; top:-20px; height:310px; width:1px; background:var(--rose); transform:rotate(45deg); }.sunMark i:nth-child(2) { transform:rotate(-45deg); }.sunMark i:nth-child(3) { transform:rotate(90deg); }
+.contactMeta { display:flex; flex-direction:column; gap:8px; padding-top:15px; border-top:1px solid var(--line); color:#6c5b60; font-size:12px; }.contactMeta span:first-child { color:var(--rose); font-size:9px; font-weight:700; letter-spacing:1.5px; }
+.contactBottom { padding:18px 0; background:var(--plum-dark); color:#e2d1d5; font-size:9px; letter-spacing:1.5px; }.contactBottom .wrap { display:flex; justify-content:space-between; gap:20px; }
+@media(max-width:760px) {
+ .contact { grid-template-columns:1fr; gap:45px; min-height:0; padding-top:62px; padding-bottom:55px; }.contactMain h1 { font-size:clamp(55px,14vw,82px); }.contactMain>p { font-size:17px; }.contactAside { min-height:360px; padding:36px 25px 24px; }.contactAside>p { font-size:38px; }.sunMark { top:6px; right:-87px; transform:scale(.85); transform-origin:top right; }
+ .contactBottom .wrap { flex-direction:column; gap:8px; }
+}

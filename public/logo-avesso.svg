@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 118" fill="none">
+  <path d="M20 16h78v86H20z" stroke="#64293F" stroke-width="1.6"/>
+  <path d="M31 88 86 28M31 28h44M31 44h30M31 60h16" stroke="#A84E69" stroke-width="2.1" stroke-linecap="round"/>
+  <circle cx="86" cy="28" r="4" fill="#D69B87"/>
+  <text x="119" y="57" fill="#64293F" font-family="Georgia,serif" font-size="46" letter-spacing="-2">Avesso da Luz</text>
+  <text x="122" y="87" fill="#5C4B50" font-family="Arial,sans-serif" font-size="12" letter-spacing="5">ESTÚDIO DE BELEZA</text>
+</svg>

@@ -1,0 +1,16 @@
+.workGrid { display:grid; grid-template-columns:1fr 1fr; align-items:start; column-gap:clamp(22px,7vw,100px); row-gap:72px; padding:15px 0 68px; }
+.workCard { margin:0; }.makeup { margin-top:100px; }.event { margin-top:-15px; }.portrait { margin-top:82px; }
+.image { height:500px; }.hair .image { height:580px; }.makeup .image { height:400px; }.event .image { height:495px; }.portrait .image { height:430px; }
+.workCard figcaption { position:relative; display:grid; grid-template-columns:1fr auto; gap:1px 15px; padding:13px 0 0; border-bottom:1px solid var(--line); }
+.workCard figcaption span { color:var(--rose); font-size:9px; font-weight:700; letter-spacing:1.6px; }
+.workCard figcaption i { padding-bottom:13px; color:var(--plum); font:italic 22px var(--display); }
+.workCard figcaption b { position:absolute; right:0; top:16px; color:#8f7d81; font-size:10px; font-weight:500; }
+.disclaimer { padding-bottom:90px; color:#786b6f; font-size:12px; }
+.workCta { padding:75px 0 90px; background:#e9ddd5; }.workCta h2 { margin:18px 0 27px; font:400 clamp(48px,7vw,82px)/.95 var(--display); letter-spacing:-.05em; }.workCta h2 em { color:var(--plum); }
+@media(max-width:760px) {
+ .workGrid { grid-template-columns:1fr; row-gap:34px; padding-top:0; padding-bottom:45px; }
+ .makeup,.event,.portrait { margin-top:0; }
+ .image,.hair .image,.makeup .image,.event .image,.portrait .image { height:min(115vw,480px); }
+ .makeup .image { height:min(92vw,390px); }.portrait .image { height:min(100vw,425px); }
+ .disclaimer { padding-bottom:55px; }.workCta { padding:63px 0 72px; }
+}

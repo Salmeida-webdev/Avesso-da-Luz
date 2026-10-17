@@ -1,0 +1,22 @@
+.servicesList { padding-bottom:110px; }
+.service { position:relative; display:grid; grid-template-columns:95px 1fr 100px; gap:30px; padding:44px 0 52px; border-top:1px solid var(--line); scroll-margin-top:30px; }
+.service:last-child { border-bottom:1px solid var(--line); }
+.serviceAside { display:flex; flex-direction:column; justify-content:space-between; color:var(--rose); }
+.serviceAside span { font:italic 25px var(--display); }
+.serviceAside i { font-style:normal; font-size:31px; }
+.serviceMain h2 { margin:11px 0 0; color:var(--plum); font:400 clamp(45px,6.4vw,77px)/.95 var(--display); letter-spacing:-.05em; }
+.serviceMain h3 { margin:11px 0 12px; font:italic 22px var(--display); }
+.serviceMain>p { max-width:640px; color:#6b5e62; font-size:17px; }
+.tags { display:flex; flex-wrap:wrap; gap:8px; margin:21px 0 24px; }
+.tags span { padding:6px 11px; border:1px solid rgba(100,41,63,.32); border-radius:40px; color:var(--plum); font-size:12px; }
+.serviceCta { display:inline-flex; gap:18px; align-items:center; padding-bottom:7px; border-bottom:1px solid var(--plum); color:var(--plum); font-size:14px; font-weight:600; text-decoration:none; }
+.serviceCta b { color:var(--rose); }
+.serviceIndex { align-self:center; justify-self:end; color:#e5d8d0; font:400 clamp(80px,13vw,170px)/.8 var(--display); letter-spacing:-.08em; }
+.serviceFooter { padding:85px 0 100px; background:#e9ddd5; }
+.serviceFooter .wrap { display:grid; grid-template-columns:1.1fr .8fr auto; align-items:end; gap:50px; }
+.serviceFooter h2 { margin:20px 0 0; font:400 clamp(42px,6vw,72px)/.96 var(--display); letter-spacing:-.05em; }.serviceFooter h2 em { color:var(--plum); }
+.serviceFooter p { max-width:340px; margin:0; color:#65575b; }
+@media(max-width:760px) {
+ .servicesList { padding-bottom:72px; }.service { grid-template-columns:43px 1fr; gap:15px; padding:32px 0 38px; }.serviceAside { grid-row:1; }.serviceAside i { display:none; }.serviceMain h2 { font-size:52px; }.serviceMain h3 { font-size:19px; }.serviceMain>p { font-size:16px; }.serviceIndex { position:absolute; right:0; top:44px; z-index:-1; font-size:90px; opacity:.7; }
+ .serviceFooter { padding:65px 0 74px; }.serviceFooter .wrap { grid-template-columns:1fr; gap:24px; }.serviceFooter p { max-width:500px; }.serviceFooter .textLink { justify-self:start; }
+}
